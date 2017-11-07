@@ -1,0 +1,141 @@
+/* Se utiliza un selector universal para 
+remover cualquier estilo anterior de los elementos  */
+* {
+	border: none;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0px;
+	padding: 0px;
+ }
+
+/* Reseteo márgenes browser y color body */
+body {
+	background-image: url(../img/Ballons);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.container {
+	width: 100%;
+    height: 50px;
+    background-color: #1DA1F2;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 10px;
+}
+
+.center{
+	height: 300px;
+	padding-left: 100px;
+}
+
+.text {
+	background-color: white;
+    height: 260px;
+    width: 540px;
+    float: left;
+    margin: 12px;
+    padding: 10px;
+}
+#static h2{
+	margin-top: 40px;
+    margin-bottom: 18px;
+    margin-left: 10px;
+    font-size: 28px;
+}
+
+
+#static p{
+	margin-left: 10px;
+	font-size: 24px;
+	margin-bottom: 30px;
+}
+
+#static hr{
+	width: 100%;
+	border: .5px solid grey;
+}
+
+#static a{
+	margin-left: 10px;
+	color: #1DA1F2;
+}
+textarea {
+	width: 90%;
+    color: #4E4D53;
+    font-size: 20px;
+    padding: 1em;
+    resize: horizontal;
+}
+.text hr{
+	width: 100%;
+	border: 1px solid #1DA1F2;
+}
+
+#btn:disabled {
+    background-color: #e0dbdb;
+}
+
+#btn {
+    background-color: #66AEC7;
+    cursor: pointer;
+    margin-top: 35px;
+    width: 110px;
+    height: 35px;
+    display: block;
+    color: #FFF;
+}
+
+#btn:hover {
+	background-color: #5590A6;
+}
+
+
+
+/* Estilos contenedor comentarios */
+#cont {
+	clear: both;
+	border-radius: 0.4em;
+	width: 51em;
+	margin: 0 auto;
+	color: #4E4D53;
+	text-align: left;
+	margin-bottom: 6em;
+}
+
+#cont span {
+	margin-left: 1em;
+}
+
+#cont div {
+	padding: 1em 0.5em;
+    margin-bottom: 2em;
+    background-color: #FFF;
+    border-radius: 10px;
+}
+
+.heart, .trash {
+	margin:1em;
+	float: right;
+}
+
+.trash:hover {
+	color: #1DA1F2;
+	cursor: pointer;
+}
+
+.strike-out {
+	text-decoration: line-through;
+	color: #1DA1F2;
+}
+
+.red {
+	color: #FC1E26;
+	cursor: pointer;
+}
+
+p {
+	display: inline-block;
+	margin-left: 0.5em;
+}
