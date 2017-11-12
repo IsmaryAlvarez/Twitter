@@ -2,152 +2,144 @@
 remover cualquier estilo anterior de los elementos  */
 * {
 	border: none;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	margin: 0px;
 	padding: 0px;
  }
 
-/* Reseteo márgenes browser y color body */
+/* Fondo y diseño del body */ 
+html, body {height: 100%;}
+ 
 body {
+	background-attachment: fixed;
 	background-image: url(../img/Ballons);
-	background-size: cover;
 	background-repeat: no-repeat;
-}
-
-.container {
+	background-size: cover;
+ }
+ 
+.logo {
+	background-color: #1DA1F2;
+	color: white;
+	font-size: 28px;
+	height: 50px;
+	padding-top: 10px;
+	text-align: center;
+	vertical-align: middle;
 	width: 100%;
-    height: 50px;
-    background-color: #1DA1F2;
-    color: white;
-    font-size: 28px;
-    text-align: center;
-    vertical-align: middle;
-    padding-top: 10px;
-}
+ }
 
-.center{
-	height: 300px;
+ /* Estilos texto estático */
+ 
+.center {
 	padding-left: 100px;
-}
-
+ }
+ 
 .text {
 	background-color: white;
-    height: 260px;
-    width: 540px;
-    float: left;
-    margin: 12px;
-    padding: 10px;
-}
-
-#count{
-	margin-left: 500px;
-    margin-top: 10px;
-    color: #1DA1F2;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-
-#static h2{
-	margin-top: 40px;
-    margin-bottom: 18px;
-    margin-left: 10px;
-    font-size: 28px;
-}
-
-
-#static p{
-	    margin-left: 10px;
-    font-size: 24px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    font-weight: 700;
-}
-
-#static hr{
-	width: 100%;
+	float: left;
+	height: 260px;
+	margin: 12px;
+	padding: 10px;
+	width: 540px;
+ }
+  
+h2 {
+	font-size: 28px;
+	margin: 40px 0px 18px 10px;
+ }
+ 
+#static p {
+	font-size: 24px;
+	font-weight: 700;
+	margin: 10px 0px 20px 10px;
+ }
+ 
+hr {
 	border: .5px solid grey;
-}
-
-#static a{
-	margin-left: 10px;
-	color: #1DA1F2;
-}
-textarea {
-	width: 90%;
-    color: #4E4D53;
-    font-size: 20px;
-    padding: 1em;
-    resize: vertical;
-}
-.text hr{
 	width: 100%;
+ }
+ 
+a {
+	color: #1DA1F2;
+	margin-left: 10px;
+ }
+ 
+#static img {
+	height: 150px;
+	margin-left: 350px;
+	margin-top: -150px;
+	position: absolute;
+	width: 150px;
+ }
+ 
+/* Estilos texarea y botones */
+
+textarea {
+	color: #4E4D53;
+	font-size: 20px;
+	padding: 1em;
+	resize: vertical;
+	width: 90%;
+ }
+ 
+.text hr {
 	border: 1px solid #1DA1F2;
-}
-
-#btn:disabled {
-    background-color: #e0dbdb;
-}
-
+	width: 100%;
+ }
+ 
 #btn {
-    background-color: #66AEC7;
-    cursor: pointer;
-    margin-top: 35px;
-    width: 110px;
-    height: 35px;
-    display: block;
-    color: #FFF;
-}
+	background-color: #66AEC7;
+	color: #FFF;
+	cursor: pointer;
+	display: inline-block;
+	height: 35px;
+	width: 110px;
+ }
 
-#btn:hover {
-	background-color: #5590A6;
-}
-
-
-
+	#btn:disabled {
+		background-color: #e0dbdb;
+ 	}
+ 
+	#btn:hover {
+		background-color: #5590A6;
+ 	}
+ 
 /* Estilos contenedor comentarios */
 #cont {
-	clear: both;
 	border-radius: 0.4em;
-	width: 51em;
-	margin: 0 auto;
+	clear: both;
 	color: #4E4D53;
-	text-align: left;
 	margin-bottom: 6em;
-}
-
-#cont span {
-	margin-left: 1em;
-}
-
-#cont div {
-	padding: 1em 0.5em;
-    margin-bottom: 2em;
-    background-color: #FFF;
-    border-radius: 10px;
-}
-
-
-.strike-out {
-	text-decoration: line-through;
+	margin: 0 auto;
+	text-align: left;
+	width: 51em;
+ }
+ 
+ #count {
 	color: #1DA1F2;
-}
-
-
-
+	font-size: 20px;
+	font-weight: 700;
+	margin-left: 500px;
+	margin-top: 10px;
+ }
+	#cont span {
+		margin-left: 1em;
+	 }
+ 
+	#cont div {
+		background-color: #FFF;
+		border-radius: 10px;
+		margin-bottom: 2em;
+		padding: 1em 0.5em;
+	 }
+ 
+	#cont p {
+		display: block;
+		margin: 5px;
+	 }
+ 
+ 
 p {
 	display: inline-block;
 	margin-left: 0.5em;
-}
-#reloj{
-	display: inline-block;
-
-}
-#hora{
-	float: left;
-
-}
-#minuto{
-	float: left;
-
-}
+ }

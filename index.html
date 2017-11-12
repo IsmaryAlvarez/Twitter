@@ -2,57 +2,72 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Twitter</title>
+	<title> Twitter</title>
+
+	<!-- Icono de Twitter -->
+
+	<link rel="shortcut icon" type="image/png" href="../Twitter/img/apple-touch-icon-192x192.png">
+
+	<!-- Link Css -->
 
 	<link rel="stylesheet" href="css/style.css">
 
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<!-- Fuentes -->
 
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+	<!-- Iconos -->
 	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 
-	<link rel="stylesheet" href="icomoon/style.css">
-
+	
 </head>
 <body>
-<!-- Sección header -->
+
+	<!-- Sección header -->
+
 	<header>
-		<div class="container">
-				<i class="fa fa-twitter" aria-hidden="true"></i>
-				Twitter
+		<div class="logo">
+			<i class="fa fa-twitter" aria-hidden="true"></i>
+			Twitter
 		</div>
 	</header>
-<!-- Sección textarea, botón y contenedor mensajes -->
+
+	<!-- Seccion de mensaje estático -->
+
 	<section class="center">
 		<div class="text">
+
 			<div id="static">
-			<h2>Reto del Código</h2>
-			<p>Hola, <br>
-			soy front-end developer jr.</p>
-			<hr>
-			<a><p>CÓDIGO</p></a>
+
+				<h2>Reto del Código</h2>
+				<p>Hola, <br>
+				soy front-end developer jr.
+				<img src="img/robotina.jpg" alt="Robotina">
+				</p>
+				<hr>
+				<p><a href="https://media.makeameme.org/created/javascript-javascript-everywhere.jpg" target="_blank">CÓDIGO</a></p>
+
 			</div>
 
 		</div>
 
+	<!-- Sección textarea, botón y contenedor mensajes -->
 		<div class="text">
-			<textarea class="txt" id="comment"   placeholder="¿Qué está pasando?" style="overflow-y: hidden;"></textarea>
+			<textarea class="txt" id="comment"   placeholder="¿Qué está pasando?" style="overflow-y: hidden;" rows="5" cols="25"></textarea>
 			<hr>
 			<div id="count">140</div>
-		<button type="button" id="btn" disabled="" >TWEET</button>
+			<button type="button" id="btn" disabled="" >TWEET</button>
 				
 		</div>
-<!-- contenedor comentarios -->
-			<div id="cont">
-				
-			</div>
-	<div id="reloj">
 
-	<div id='hora'></div>
-	<div id='minuto'></div>
-	</div>
+	<!-- contenedor comentarios -->
 
+		<div id="cont"></div>
 
 	</section>
-	<script type="text/javascript" src="js/app.js"></script>
+
+<!-- Link JS -->
+<script type="text/javascript" src="js/app.js"></script>
+
 </body>
 </html>
