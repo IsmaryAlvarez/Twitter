@@ -4,6 +4,7 @@ textarea.addEventListener('input', function(){
 		document.getElementById("btn").disabled = false;
 } 		
 })
+
 // Contador de caracteres
 
 var length = 140;
@@ -11,15 +12,19 @@ var el_c = document.getElementById('count');
 el_c.innerHTML = length;
 textarea.onkeyup = function () {
   document.getElementById('count').innerHTML = (140 - this.value.length);
-/*  if (document.getElementById('count') > 140) {
+ if (document.getElementById('count').textContent < 0) {
   	document.getElementById("btn").disabled = true;
 
-  } else if  (count > 120 && count <130) {
-  	span.style.color= 'grey';
+  } else if  (document.getElementById('count').textContent > 0 && document.getElementById('count').textContent <10) {
+  	count.style.color= 'orange';
 
-  } else if (count >= 130 && count < 140 ){
-  	document.getElementById('count').style.color=red;
-}*/};
+  } else if  (document.getElementById('count').textContent <= 0) {
+  	count.style.color= 'red';
+
+  } else if (document.getElementById('count').textContent >= 10 && document.getElementById('count').textContent < 20 ){
+  	count.style.color= 'yellow';
+  	return;
+}};
 
 
 var botoncito = document.getElementById('btn');
@@ -44,19 +49,6 @@ botoncito.addEventListener('click', function(){
 		return;
 	} 
 	
-	//crear checkbox
-
-	var chck = document.createElement('input');
-	chck.type = 'checkbox';
-
-	//creamos icono de corazon
-	var heart = document.createElement('i');
-	heart.classList.add('fa', 'fa-heart', 'heart');
-
-	//creamos icono de basura
-	var trash = document.createElement('i');
-	trash.classList.add('fa', 'fa-trash', 'trash');
-
 	//nodos de texto del textarea
 	var textNewComment = document.createTextNode(comments);
 
@@ -64,16 +56,48 @@ botoncito.addEventListener('click', function(){
 	var dateSpan = document.createElement("span");
 	dateSpan.textContent = new Date();
 
+		 Reloj();
+
+	
+function Reloj() {
+
+var tiempo = new Date();
+var hora = tiempo.getHours();
+var minuto = tiempo.getMinutes();
+
+setTimeout('Reloj()', 1000);
+str_hora = new String(hora);
+if (str_hora.length == 1) {
+document.getElementById('hora').innerHTML = '0' + hora +  ':';
+}else{document.getElementById('hora').innerHTML = hora +  ':';
+}
+if (str_hora.charAt(0) < 12 ){
+document.getElementById('minuto').innerHTML = minuto +  'AM';
+} else {document.getElementById('minuto').innerHTML = minuto + 'PM';
+}
+str_minuto = new String(minuto);
+if (str_minuto.length == 1) {
+document.getElementById('minuto').innerHTML = '0' + minuto;
+}
+
+ 
+}
+
+
+
+
 	var contenedorElemento= document.createElement('p');
 	contenedorElemento.appendChild(textNewComment);
-	newComments.appendChild(chck);
-	newComments.appendChild(trash);
-	newComments.appendChild(heart);
+
 	newComments.appendChild(dateSpan);
 	newComments.appendChild(contenedorElemento);
 
 	cont.appendChild(newComments)
+	 document.getElementById('count').innerHTML = 140;
+
 
 });
+
+
 
 

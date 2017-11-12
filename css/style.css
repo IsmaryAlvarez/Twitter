@@ -38,6 +38,16 @@ body {
     margin: 12px;
     padding: 10px;
 }
+
+#count{
+	margin-left: 500px;
+    margin-top: 10px;
+    color: #1DA1F2;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
 #static h2{
 	margin-top: 40px;
     margin-bottom: 18px;
@@ -47,9 +57,11 @@ body {
 
 
 #static p{
-	margin-left: 10px;
-	font-size: 24px;
-	margin-bottom: 30px;
+	    margin-left: 10px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-weight: 700;
 }
 
 #static hr{
@@ -66,7 +78,7 @@ textarea {
     color: #4E4D53;
     font-size: 20px;
     padding: 1em;
-    resize: horizontal;
+    resize: vertical;
 }
 .text hr{
 	width: 100%;
@@ -115,27 +127,27 @@ textarea {
     border-radius: 10px;
 }
 
-.heart, .trash {
-	margin:1em;
-	float: right;
-}
-
-.trash:hover {
-	color: #1DA1F2;
-	cursor: pointer;
-}
 
 .strike-out {
 	text-decoration: line-through;
 	color: #1DA1F2;
 }
 
-.red {
-	color: #FC1E26;
-	cursor: pointer;
-}
+
 
 p {
 	display: inline-block;
 	margin-left: 0.5em;
+}
+#reloj{
+	display: inline-block;
+
+}
+#hora{
+	float: left;
+
+}
+#minuto{
+	float: left;
+
 }
